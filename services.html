@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <style>
+        .service-card {
+            height: 450px !important;
+        }
+
+        .service-card .row {
+            height: 100%;
+        }
+
+        .service-card .col-md-4 {
+            height: 100%;
+        }
+
+        .service-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-top-left-radius: 0.375rem;
+            border-bottom-left-radius: 0.375rem;
+        }
+
+        .service-card .card-body {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+            padding: 1.5rem;
+        }
+
+        .service-card .card-title {
+            margin-bottom: 1rem;
+        }
+
+        .service-card .card-text {
+            flex-grow: 1;
+        }
+
+        .service-card .btn {
+            margin-top: auto;
+        }
+
+        .service-card .table-container {
+            max-height: 150px;
+            overflow-y: auto;
+            margin-bottom: 1rem;
+        }
+    </style>
+    <title>Services - Seven Seas Spa</title>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/logo.png" alt="Logo" width="30" height="30">
+                Seven Seas Spa
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero text-center" id="mainContent">
+        <div class="container">
+            <h1 class="display-4">Our Services</h1>
+            <p class="lead">Explore what we have to offer</p>
+        </div>
+    </header>
+
+    <!-- Main Section -->
+    <main class="container my-5">
+        <!-- Services Cards -->
+        <section class="content-section">
+            <div class="row g-4">
+                <!-- Yoga Classes Card -->
+                <div class="col-12">
+                    <div class="card shadow service-card">
+                        <div class="row g-0 h-100">
+                            <div class="col-md-4">
+                                <img src="assets/images/yoga.png" class="rounded-start" alt="Yoga Class">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h2 class="display-5 card-title">Yoga Classes</h2>
+                                    <p class="card-text">Transform your mind, body, and spirit through our yoga
+                                        programs.
+                                        Our experienced instructors guide you through Vinyasa, Hatha, and restorative
+                                        yoga
+                                        styles for all levels.</p>
+
+                                    <h6 class="mt-3 mb-2">Timetable</h6>
+                                    <div class="table-container">
+                                        <table class="table table-striped table-sm mb-0">
+                                            <thead>
+                                                <tr>
+                                                    <th>Day</th>
+                                                    <th>Time</th>
+                                                    <th>Class</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Monday</td>
+                                                    <td>7:00 AM</td>
+                                                    <td>Morning Vinyasa</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Tuesday</td>
+                                                    <td>6:00 PM</td>
+                                                    <td>Hatha Yoga</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Wednesday</td>
+                                                    <td>12:00 PM</td>
+                                                    <td>Lunch Flow</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <a href="contact.html" class="btn btn-primary mt-3">Contact Us to Join a Class</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nutritional Advice Card -->
+                <div class="col-12">
+                    <div class="card shadow service-card">
+                        <div class="row g-0 h-100">
+                            <div class="col-md-4">
+                                <img src="assets/images/nutrition.png" class="rounded-start" alt="Nutritional Advice">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h2 class="display-5 card-title">Nutritional Advice</h2>
+                                    <p class="card-text">Get personalized dietary guidance and meal planning from our
+                                        certified nutritionists. We create customized nutrition plans to help you
+                                        achieve
+                                        your health goals and develop sustainable eating habits.</p>
+                                    <a href="contact.html" class="btn btn-primary mt-3">Contact Us for Nutritional
+                                        Advice</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mental Health Support Card -->
+                <div class="col-12">
+                    <div class="card shadow service-card">
+                        <div class="row g-0 h-100">
+                            <div class="col-md-4">
+                                <img src="assets/images/mental_health.png" class="rounded-start"
+                                    alt="Mental Health Support">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h2 class="display-5 card-title">Mental Health Support</h2>
+                                    <p class="card-text">Access professional mental health support with our licensed
+                                        counselors and therapists. We offer individual counseling, group therapy, and
+                                        stress
+                                        management in a safe, confidential environment.</p>
+                                    <a href="contact.html" class="btn btn-primary mt-3">Contact Us for Mental Health
+                                        Support</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wellness Programs Card -->
+                <div class="col-12">
+                    <div class="card shadow service-card">
+                        <div class="row g-0 h-100">
+                            <div class="col-md-4">
+                                <img src="assets/images/wellness.png" class="rounded-start" alt="Wellness Programs">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h2 class="display-5 card-title">Wellness Programs</h2>
+                                    <p class="card-text">Join our comprehensive wellness programs combining fitness,
+                                        nutrition, and lifestyle coaching. Our personalized approach helps you achieve
+                                        optimal health through detox retreats, weight management, and stress reduction
+                                        workshops.</p>
+                                    <a href="contact.html" class="btn btn-primary mt-3">Join Our Wellness Program</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer text-center text-lg-start py-3 mt-auto">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-md-start mb-3 mb-md-0">
+                    <p>© 2022 Seven Seas Spa</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="https://www.facebook.com/Code.InstituteIRL/" target="_blank" rel="noopener noreferrer"
+                        aria-label="Visit our Facebook page" class="me-2"><i class="bi bi-facebook"></i></a>
+                    <a href="https://x.com/codeinstitute" target="_blank" rel="noopener noreferrer"
+                        aria-label="Follow us on Twitter" class="me-2"><i class="bi bi-twitter"></i></a>
+                    <a href="https://www.instagram.com/codeinstitute/" target="_blank" rel="noopener noreferrer"
+                        aria-label="Follow us on Instagram" class="me-2"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.linkedin.com/school/code-institute/" target="_blank" rel="noopener noreferrer"
+                        aria-label="Connect with us on LinkedIn" class="me-2"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
