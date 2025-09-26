@@ -79,6 +79,7 @@ main {
 .card-img-top {
     height: 200px;
     object-fit: cover;
+    object-position: center 30%;
 }
 
 /* Set the size of the testimonial images */
